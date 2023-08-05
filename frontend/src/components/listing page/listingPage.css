@@ -1,0 +1,289 @@
+.listingpage{
+    background-color: rgba(231, 231, 227, 1);
+    padding-bottom: 50px;
+}
+
+.listingpageoffercontainer{
+    padding: 4vw;
+    background-color: rgba(231, 231, 227, 1);
+}
+
+.listingofferbox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 40px;
+    object-fit: contain;
+}
+
+.listingofferimg{
+    width: 100%;
+    aspect-ratio: 4/1;
+    border-radius: 40px;
+}
+
+.listingpagestartcontainer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 4vw;
+    margin-right: 4vw;
+}
+
+.listingpageleftheading{
+    font-size: 45px;
+}
+.listingpageitemscount{
+    font-size: 18px;
+    font-weight: 500;
+    color: rgba(35, 35, 33, 0.9);
+}
+
+.listingpageoption{
+    width: 200px;
+    height: 60px;
+    border: none;
+    border-radius: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.listingpageoption:focus{
+    outline: none;
+}
+
+.listingpageopt{
+    padding: 10px;
+    font-size: 14px;
+}
+
+
+.lsitingpagemain{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+.listingpagemainleft{
+    flex-basis: 30%;
+    margin-left: 4vw;
+    margin-top: 25px;
+}
+
+.listingpagemainleftheading{
+    font-size: 26px;
+    font-weight: 700;
+}
+
+.listingpagefiltertypebox{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 25px;
+    margin-bottom: 18px;
+}
+
+.listingpagefiltertypeheading{
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 0.025rem;
+}
+
+.listingpagefiltertypearrowbox{
+    display: flex;
+    align-items: center;
+    margin-right: 30px;
+    transition: all 0.5s ease;
+}
+
+.listingpagefiltertypearrow{
+    height: 16px;
+    width: 16px;
+    transition: all 0.5s ease;
+}
+
+.filtersizebox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 55px;
+    height: 55px;
+    background-color: #e7e7e3;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 700;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    border: none;
+}
+
+.listingpagefiltersizecontainer{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    height: 0px;
+    opacity: 0;
+    transition: all 0.7s ease;
+}
+
+
+.listingpagemainright{
+    flex-basis: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-right: 30px;
+    margin-top: 20px;
+}
+
+.listingpageproductbox{
+    position: relative;
+    aspect-ratio: 1/1;
+    display: flex;
+    width: max(140px,19vw);
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    background-color: white;
+    border-radius: 25px;
+    margin: 6px 6px 6px 6px;
+}
+
+.listingpageproductbox::after{
+    content: 'New';
+    position: absolute;
+    left: 10px;
+    top:10px;
+    border-radius: 20px 0px 20px 0px;
+    background-color: rgba(74, 105, 226, 1);
+    text-transform: uppercase;
+    color: white;
+    font-size: 10px;
+    font-weight: 600;
+    width: 60px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.listingpageproductboximg{
+    aspect-ratio: 1/1;
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+
+.listingpageproductname{
+    font-size: 24px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.listingpageproductbutton{
+    background-color: black;
+    border-radius: 10px;
+    border: none;
+    width: 98%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.listingpageproductpricetag{
+    margin-left: 5px;
+    color: rgba(255, 165, 47, 1);
+    font-size: 14px;
+}
+
+.paginationBox {
+    display: flex;
+    justify-content: center;
+    background-color: #e7e7e3;
+    margin: 2rem 0;
+  }
+  
+  .pagination {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+  }
+  
+  .page-item {
+    background-color: #e7e7e3;
+    list-style: none;
+    padding: 1vmax 1.5vmax;
+    transition: all 0.3s;
+    cursor: pointer;
+  }
+  .page-item:first-child {
+    border-radius: 5px 0 0 5px;
+  }
+  
+  .page-item:last-child {
+    border-radius: 0 5px 5px 0;
+  }
+  .page-link {
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    transition: all 0.3s;
+  }
+  
+  .page-item:hover .page-link {
+    color: rgb(0, 0, 0);
+  }
+  
+  .pageItemActive {
+    background-color: #4a69e2;
+  }
+  
+  .pageLinkActive {
+    color: #e7e7e3;
+  }
+
+  .filterBox{
+    width: 10vmax;
+    background-color: #e7e7e3;
+  }
+  
+  .categoryBox {
+    padding: 0%;
+  }
+  
+  .category-link {
+    list-style: none;
+    color: rgba(0, 0, 0, 0.61);
+    font-weight: 500;
+    margin: 0.4vmax;
+    cursor: pointer;
+    transition: all 0.5s;
+  }
+  .category-link:hover {
+    color: #4a69e2;
+  }
+
+
+@media(max-width: 768px){
+    .listingpageproductname{
+        font-size: 19px;
+    }
+    .listingpageproductbox::after{
+        width: 40px;
+        height: 30px;
+    }
+}

@@ -1,0 +1,56 @@
+.registertext{
+    display: inline-block;
+    margin-top: 10px;
+    position: relative;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.registertypesbox{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.registersmallheadings{
+    font-weight: 700;
+    font-size: 32px;
+    margin-top: 20px;
+}
+
+.registergender{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.registergenderbox{
+    display: flex;
+    align-items: center;
+    margin-right: 40px;
+}
+
+.registergendertxt{
+    font-size: 18px;
+    font-weight: 600;
+    margin-left: 10px;
+}
+
+.registeroptionbox{
+    height: 15px;
+    width: 15px;
+    border: 2px solid black;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3px;
+}
+
+.registeroptionselectbox{
+    height: 100%;
+    width: 100%;
+    transition: all 0.3s ease;
+}

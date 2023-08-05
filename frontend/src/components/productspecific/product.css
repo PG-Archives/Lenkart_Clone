@@ -1,0 +1,221 @@
+.product{
+    padding: 4vw;
+    background-color: rgba(231, 231, 227, 1);
+}
+
+.productmain{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.productleft{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-basis: 65%;
+    flex-wrap: wrap;
+    /* border: 2px solid red; */
+}
+
+.productleftimgbox{
+    display: flex;
+    flex-basis: 48%;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.productleftimg{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.productright{
+    flex-basis: 35%;
+    /* border: 2px solid blue; */
+    padding: 2rem;
+}
+
+.productname{
+    font-size: 36px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.productprice{
+    font-size: 28px;
+    font-weight: 700;
+    color: #4A69E2;
+    margin-top: 10px;
+}
+
+.productspecificquantitychange{
+    margin: 10px 0px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: nowrap;
+    background: transparent;
+    border: 1px solid black;
+    position: relative;
+    height: 40px;
+    width: 170px;
+}
+.productspecificquantitychange button{
+    background: transparent;
+    border: none;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.productspecificquantitychange > input{
+    width: 50px;
+    height: 100%;
+    text-align: end;
+    border: none;
+    font-size: 20px;
+    font-weight: 500;
+    background-color: #e7e7e3;
+}
+
+.productcolorbox{
+    margin-top: 35px;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.colorselectionbox{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.colorbox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    padding: 5px;
+    height: 30px;
+    width: 30px;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+.colorboxbox{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+}
+
+.productsizes{
+    position: relative;
+    margin-top: 35px;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.allsizescontianer{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 10px;
+}
+.sizebox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 45px;
+    width: 45px;
+    border-radius: 5px;
+    background-color: white;
+    font-size: 18px;
+    margin-right: 5px;
+    font-weight: 500;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.productaddtocart{
+    margin-top: 35px;
+    width: 100%;
+    display: flex;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #232321;
+    height: 50px;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: white;
+    font-weight: 500;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.productbuyitnow{
+    margin-top: 5px;
+    width: 100%;
+    display: flex;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #4A69E2;
+    height: 50px;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: white;
+    font-weight: 500;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.aboutproduct{
+    margin-top: 20px;
+}
+.aboutproduct:where(span){
+    font-size: 16px;
+}
+.aboutproductheading{
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.sizechartbutton{
+    position: absolute;
+    top: 5px;
+    right: 0px;
+    border: none;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.sizechartbutton::after{
+    content: '';
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    height: 2px;
+    background-color: black;
+    width: 100%;
+}
+
+
+@media(max-width:768px){
+    .productmain{
+        flex-direction: column;
+    }
+    .productname{
+        font-size: 30px;
+    }
+    .productprice{
+        font-size: 22px;
+    }
+}

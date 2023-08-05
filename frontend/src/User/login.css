@@ -1,0 +1,137 @@
+.login{
+    background-color: rgba(231, 231, 227, 1);
+    padding: 4vw;
+}
+
+.loginmain{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.loginleft{
+    margin-left: 30px;
+    flex-basis: 40%;
+}
+
+.loginforgotpassword{
+    display: inline-block;
+    margin-top: 10px;
+    position: relative;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.loginforgotpassword span::after{
+    content: '';
+    width: 100%;
+    height: 1px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: black;
+}
+
+.loginheading{
+    font-size: 40px;
+}
+
+.logininputbox{
+    margin-top: 30px;
+}
+
+.logininputemail{
+    width: 95%;
+    height: 50px;
+    border-radius: 10px;
+    padding-left: 15px;
+    font-size: 18px;
+    background: transparent;
+}
+.logininputemail:focus{
+    outline: none;
+}
+
+.logininputpassword{
+    width: 85%;
+    height: 50px;
+    border-radius: 10px;
+    padding-left: 15px;
+    font-size: 18px;
+    background: transparent;
+}
+.logininputepassword:focus{
+    outline: none;
+}
+
+.loginbutton{
+    margin-top: 30px;
+    display: flex;
+    width: 100%;
+    background-color: rgba(35, 35, 33, 1);
+    border: none;
+    /* color: white; */
+    height: 50px;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 0.025rem;
+    cursor: pointer;
+}
+
+.loginbutton > input{
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    outline: none;
+}
+
+.logintypesbox{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.logintypebutton{
+    height: 70px;
+    width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    border: 1px solid black;
+    background: transparent;
+    transition: all 0.3s ease;
+}
+.logintypebutton:hover{
+    background-color: white;
+}
+
+.logintypeimg{
+    height: 40px;
+    aspect-ratio: auto;
+}
+
+
+.lognright{
+    flex-basis: 60%;
+}
+
+@media(max-width:768px){
+    .loginmain{
+        flex-direction: column;
+        margin-right: 10px;
+    }
+    .loginleft{
+        margin-left: 0px;
+        width: 100%;
+    }
+}

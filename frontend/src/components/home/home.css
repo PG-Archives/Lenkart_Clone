@@ -1,0 +1,22 @@
+.homecontainer{
+    background-color: #e7e7e3;
+    /* border: 2px solid red; */
+    margin-bottom: -60px;
+}
+
+.homeheading{
+    text-align: center;
+}
+
+.homedoit{
+    font-size: 15vw;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.homeheadingrigt{
+    font-size: 15vw;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: rgba(74, 105, 226, 1);
+}
